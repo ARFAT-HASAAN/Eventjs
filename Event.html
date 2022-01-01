@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="style">Style  Me Please</h2>
+
+    <button onclick="document.getElementById('style').style.color='red'" >red</button>
+
+     <button onclick="styleFunction()" >blue</button>
+
+     <button id='makeblue' >yellow</button>
+
+     <script>
+        
+            function styleFunction(){
+                let head = document.getElementById('style')
+                console.log(head)
+               head.style.fontSize = '2rem';
+            }
+
+            let button = document.getElementById('makeblue')
+            button.onclick = blueButton;
+            
+            function blueButton() {
+                document.body.style.backgroundColor = 'black'
+            }
+     </script>
+</body>
+
+</html>
