@@ -8,12 +8,15 @@
 </head>
 <body>
     <h2 id="style">Style  Me Please</h2>
+      <p id="pera"></p>
 
     <button onclick="document.getElementById('style').style.color='red'" >red</button>
 
      <button onclick="styleFunction()" >blue</button>
 
      <button id='makeblue' >yellow</button>
+
+     <button id="Button" >Button</button>
 
      <script>
         
@@ -29,6 +32,12 @@
             function blueButton() {
                 document.body.style.backgroundColor = 'black'
             }
+
+         document.getElementById('Button').addEventListener('click' ,function(){
+
+            const addButton = document.getElementById('pera').innerText =  ' today is clead day. remember!' 
+
+            } )
      </script>
 </body>
 

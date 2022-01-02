@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section id="commentbox">
+        <p> the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs,  the brown fox jump over the lazy dogs,
+             the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs,  </p>
+        <p> the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs,  the brown fox jump over the lazy dogs,
+             the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs,  </p>
+        <p> the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs,  the brown fox jump over the lazy dogs,
+             the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs, the brown fox jump over the lazy dogs,  </p>
+    </section>
+
+    <textarea id="comment" rows="5", cols="43" ></textarea> <br>
+    <button  onclick="CommentBox()" >Post</button>
+ <script>
+   function CommentBox(){
+       const conatianer = document.getElementById('commentbox');
+       const Commemt = document.getElementById('comment')
+        let pera = document.createElement('p');
+        pera.innerText = Commemt.value;
+        conatianer.appendChild(pera);
+        Commemt.value = '';
+    //    console.log(NeWcomment)
+       
+   }
+ </script>
+</body>
+</html>
